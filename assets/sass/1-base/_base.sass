@@ -1,0 +1,117 @@
+// BASE STYLES
+
+body
+  color: $mid-dark
+  font-family: $font-family
+  font-size: $base-size
+  margin: 0
+  overflow-x: hidden
+
+// ORIGINAL.brand-light
+  +hide-text
+  background:
+    image: url(/wp-content/themes/ensuremdos/assets/logos/affco-logo-white.png)
+    size: cover
+    repeat: no-repeat
+  width: 5.7em
+  height: 1.5em
+  margin: 0 auto
+
+.brand-light
+  overflow: hidden
+  text-indent: 150%
+  white-space: nowrap
+  background:
+    image: url(/wp-content/themes/ensuremdos/assets/logos/ensurem-logo-white.svg)
+    size: contain
+    repeat: no-repeat
+    //position: left center
+  // Best to make width & height proportinate to logo; however for the menu these dimensions will work for most logos.
+  width: 6.7em
+  height: 1.5em
+  margin: 0 auto
+
+.brand-dark
+  overflow: hidden
+  text-indent: 150%
+  white-space: nowrap
+  background:
+    image: url(/wp-content/themes/ensuremdos/assets/logos/ensurem-logo-dark.svg)
+    size: contain
+    repeat: no-repeat
+    position: center
+  // Best to make width & height proportinate to logo
+  width: 5.7em
+  height: 1.5em
+  margin: 0 auto
+
+.brand-light-2
+  overflow: hidden
+  text-indent: 150%
+  white-space: nowrap
+  background:
+    image: url(/wp-content/themes/ensuremdos/assets/logos/affco-logo-white.png)
+    size: contain
+    repeat: no-repeat
+    //position: left center
+  // Best to make width & height proportinate to logo; however for the menu these dimensions will work for most logos.
+  width: 6.7em
+  height: 1.5em
+  margin: 0 auto
+
+.brand-dark-2
+  overflow: hidden
+  text-indent: 150%
+  white-space: nowrap
+  background:
+    image: url(/wp-content/themes/ensuremdos/assets/logos/affco-logo-black.png)
+    size: contain
+    repeat: no-repeat
+    position: center
+  // Best to make width & height proportinate to logo
+  width: 5.7em
+  height: 1.5em
+  margin: 0 auto
+
+.brand-left
+  background:
+    position: left center
+
+.brand-center
+  background:
+    position: center
+
+.brand-right
+  background:
+    position: right center
+
+sup
+  vertical-align: top
+  position: relative
+  top: 0.65em
+  font-size: 50%
+  font-weight: 200
+
+a
+  color: $primary
+  &:hover
+    color: $accent
+
+hr
+  border: none
+  border-top: solid 0.0625em
+  border-radius: 50em
+  margin: 1em 0
+  border-color: $mid-light
+
+h6
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: auto
+
+
+//h2
+  text-transform: uppercase
+
+//@media (max-width: 768px)
+  body
+    font-size: $base-size + 0.5

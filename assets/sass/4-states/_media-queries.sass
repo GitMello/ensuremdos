@@ -1,0 +1,401 @@
+// MEDIA QUERIES
+
+.smart-break-mini
+  white-space: nowrap
+
+@media screen and (max-width:319px)
+  header
+    font-size: 50%
+    padding: 8.75em 1.5em 4.25em
+
+  .display-products
+    li
+      header
+        font-size: 60%
+
+  .l-display-products-list
+    li
+      max-width: 14em
+      min-width: 0
+
+  footer
+    h1
+      font-size: 200%
+    ul
+      font-size: 75%
+
+  .l-16-9-responsive-text
+    h2
+      font-size: 25%
+
+@media screen and (min-width:392px)
+  .smart-break
+    white-space: nowrap
+
+@media screen and (min-width: 320px) and (max-width:432px)
+  header
+    font-size: 60%
+    padding: 8.75em 1.5em 4.25em
+
+  .display-products
+    li
+      header
+        font-size: 80%
+
+  .butt-prev
+    margin-top: -0.3em
+
+  .butt-next
+    margin-top: -0.3em
+
+  .l-16-9-responsive-text
+    h2
+      font-size: 100%
+
+@media screen and (min-width: 433px) and (max-width:639px)
+  header
+    font-size: 80%
+
+  .display-products
+    li
+      header
+        font-size: 80%
+
+  .l-16-9-responsive-text
+    font-size: 90%
+
+@media screen and (max-width: 600px)
+  .l-display-products-list
+    li
+      margin: 1em 0
+
+@media screen and (min-width: 640px)
+  header
+    font-size: 100%
+
+@media screen and (max-width: 724px)
+  .l-navbar
+    .main-wrapper
+      width: 100vw
+      //height: 100vh
+      overflow-y: scroll
+      -webkit-overflow-scrolling: touch
+    font-size: $base-size - 0.25
+    h1
+      margin-left: 0.3em
+    ul
+      //border-top: solid 0.0625em $primary
+      display: none
+      //background: pink
+      li
+        border-top: solid 0.125em $mid-dark
+        display: block
+        //padding: 1em 0
+        box-sizing: border-box
+        float: none
+        width: 100%
+        text-align: right
+        background: transparentize($black, 0.15)
+        .container
+          padding: 0
+
+        .menu-bump
+          padding-right: 1.5em
+
+        &:hover
+          background: transparentize($alt, 0.15)
+          border-top: solid 0.125em $transparent
+
+          ul
+            //height: 17.25em
+
+            display:block
+            border-radius: 0 0 0 0
+            li
+              border-top: none
+              width: 100%
+            //height: 100vh
+        ul
+          display: none
+          border-top: solid 0.0125em $primary
+          position: relative
+          width: 100%
+          z-index: 9999
+          float: none
+          top: 0
+          padding: 0
+          //height: 25vh
+          li
+            display: block
+            text-align: left
+            //float: none
+            //padding: 1.25em
+            box-sizing: border-box
+            background: transparentize($dark, 1)
+            //line-height: 1em
+
+
+
+    label
+      display: block
+      padding: 1.94em 1em
+      box-sizing: border-box
+      cursor: pointer
+      position: absolute
+      right: 0em
+      background: $primary
+      transition: all 500ms ease-in-out
+
+      &:after
+        content: ''
+        display: block
+        width: 2.5em
+        height: 0.3125em
+        border-radius: 50em
+        background: $white
+        margin: 0
+        box-shadow: 0px 10px 0px $white, 0px -10px 0px $white
+        transition: all 500ms ease-in-out
+      &:before
+        content: 'close'
+        position: absolute
+        color: $transparent
+        right: 0em
+        top: 1.1em
+        transition: all 500ms ease-in-out
+
+    [type="checkbox"]:checked ~ ul
+      display: block
+      z-index: 9999
+      position: absolute
+      top: 4.2em
+      left: 0
+      width: 100%
+
+
+    [type="checkbox"]:checked ~ label
+      display: block
+      background: $accent
+      padding: 1.94em 0.45em 1.95em 4.25em
+      box-sizing: border-box
+      cursor: pointer
+      position: absolute
+      right: 0em
+      transition: all 500ms ease-in-out
+
+
+      &:after
+        content: ''
+        display: block
+        width: 2.5em
+        height: 0.3125em
+        border-radius: 50em
+        background: $white
+        margin: 0
+        box-shadow: 0px 0px 0px $accent, 0px 0px 0px $accent
+        transform: rotate(630deg)
+      &:before
+        content: 'close'
+        position: absolute
+        color: $white
+        right: 2.5em
+        top: 1.1em
+
+@media screen and (max-width: 639px)
+  .search-results-img
+    //padding-bottom: 55%
+    height: 40vw
+
+  .wax-seal
+    margin: -1.45em auto
+    width: 3em
+    height: 3em
+    h2
+      font-size: 150%
+
+  .author-seal
+    margin: -2.5em auto
+    height: 5em
+    width: 5em
+
+  .author-post-details
+    margin: 3em auto 0
+
+  .l-16-9-responsive-text
+    font-size: 85%
+
+  .slider
+    height: 50vw
+
+  .flex-1-sm
+    -webkit-order: 1
+    order: 1
+
+  .flex-2-sm
+    -webkit-order: 2
+    order: 2
+
+  .flex-3-sm
+    -webkit-order: 3
+    order: 3
+
+  .flex-4-sm
+    -webkit-order: 4
+    order: 4
+
+  footer
+    ul
+      margin-left: 0
+      border-left: none
+      padding-left: 0
+    .container
+      li
+        margin-left: 0
+        ul
+          border-top: solid 0.0625em $mid
+          margin: 0.5em 0
+
+
+
+
+
+  .anchor
+    display: block
+    height: 3.1em
+    margin-top: -3.1em
+    visibility: hidden
+
+  .anchor-team
+    display: block
+    height: 6.1em
+    margin-top: -6.1em
+    visibility: hidden
+
+  .modal
+    top: -3.1em
+    &:target
+      top: 3.1em
+      bottom: auto
+      margin-top: -3.1em
+      box-shadow: 0 1.5em 1em -1em $dark
+      border-radius: 0 0 2em 2em
+    img
+      width: 40%
+      height: auto
+      border: none
+    .close
+      position: absolute
+      top: 1em
+      right: 1em
+      line-height: 1em
+      display: inline
+      color: $altaccent
+      border: solid 0.08em $altaccent
+      //background: $accent
+      padding: 0.5em 0.65em
+      &:hover
+        border: solid 0.08em $accent
+        background: $accent
+    p
+      clear: both
+  .search
+    &:target
+      position: absolute
+      z-index: 9999999
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      border-radius: 0 0 0 0
+
+
+@media screen and (min-width: 641px) and (max-width: 837px)
+  .l-navbar
+    ul
+      li
+        ul
+          //li
+            padding: 0.75em 1.5em
+            a
+              line-height: 1.5em
+
+  .l-16-9-responsive-text
+    font-size: 90%
+
+@media screen and (min-width: 640px) and (max-width: 959px)
+  .flex-1-md
+    -webkit-order: 1
+    order: 1
+
+  .flex-2-md
+    -webkit-order: 2
+    order: 2
+
+  .flex-3-md
+    -webkit-order: 3
+    order: 3
+
+  .flex-4-md
+    -webkit-order: 4
+    order: 4
+@media screen and (max-width: 999px)
+  .l-navbar
+    ul
+      li
+        ul
+          li
+            width: 45%
+@media screen and (min-width: 960px)
+  .flex-1-lg
+    -webkit-order: 1
+    order: 1
+
+  .flex-2-lg
+    -webkit-order: 2
+    order: 2
+
+  .flex-3-lg
+    -webkit-order: 3
+    order: 3
+
+  .flex-4-lg
+    -webkit-order: 4
+    order: 4
+
+@media screen and (min-width:1065px)
+  .product-break
+    white-space: nowrap
+
+@media screen and (min-width:1921px)
+  body
+    font-size: $base-size * 1.2
+
+@media screen and (min-width:2561px)
+  body
+    font-size: $base-size * 1.5
+
+@media screen and (min-width:4000px)
+  body
+    font-size: $base-size * 2.5
+
+@media screen and (min-width:7000px)
+  body
+    font-size: $base-size * 3.5
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)
+
+  header
+    font-size: 65%
+    padding: 10em 1.5em 5em
+
+  .l-navbar
+    //.main-wrapper
+      width: 100vw
+      //height: 100vh
+      overflow-y: scroll
+      -webkit-overflow-scrolling: touch
+    ul
+      li
+        &:hover
+          ul
+            max-height: 15.2em

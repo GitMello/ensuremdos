@@ -1,0 +1,147 @@
+.display-products
+  //background: $light
+  padding: 3em 1.5em 5em
+  box-sizing: border-box
+
+  h3
+    margin: 1em 0 1.5em
+    font-weight: 400
+    font-style: italic
+
+.l-display-products-list
+  ul
+    padding: 0
+    list-style: none
+    img
+      width: 100%
+    a
+      font:
+        size: 90%
+  li
+    max-width: 19em
+    min-width: 16em
+    //width: 100%
+    display: inline-block
+    vertical-align: top
+    border-radius: 1em
+    margin: 1em
+    //opacity: 0.9
+    transition: 500ms
+    &:hover, &:focus
+      box-shadow: 0 0 2em $mid-light
+      transition: 500ms
+      //opacity: 1
+      header
+        h3
+          transition: 500ms
+          background:
+            color: $accent
+      ul
+        li
+          box-shadow: none
+      article
+        transition: 500ms
+    header
+      //border-radius: 0.5em 0.5em 0 0
+      padding: 1.5em 2em
+      background:
+        //color: $transparent
+        //image: url(/wp-content/themes/ensuremdos/assets/heros/green-2.jpg)
+        position: center
+        size: cover
+        repeat: no-repeat
+
+      h2
+        margin: 0
+      h3
+        transition: 500ms
+        background:
+          color: $primary
+        margin: 0 -1.85em
+        padding: 0.25em 1em
+        box-sizing: border-box
+    article
+      background: $white
+      padding: 0.5em
+      border: solid 0.08em $mid-light
+      border-top: none
+      border-radius: 0 0 0.5em 0.5em
+      p
+        padding: 1em
+        text-align: justify
+    hr
+      border: $mid
+    ul
+      //display: none
+      border: none
+      border-bottom: solid 0.08em $mid-light
+      //width: 100%
+      margin: 1em 0
+      padding: 0 0 1em
+      li
+        opacity: 1
+        //max-width: 100%
+        background: none
+        display: block
+        border: none
+        margin: 0.5em 0.5em 0
+        text-transform: capitalize
+        text-indent: -0.4em
+        &:before
+          font-family: FontAwesome
+          content: "\f00c"
+          margin-right: 0.4em
+          color: $primary
+    h3, p
+      margin: 0.25em 0
+    h6
+      margin: 0
+      padding: 0.25em 1.5em
+      border-radius: 0.5em 0.5em 0 0
+      color: $white
+      //font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.0225em
+
+
+.carrier-logo
+  overflow: hidden
+  text-indent: 150%
+  white-space: nowrap
+  width: 15em
+  height: 4em
+  margin: 0 auto 0.5em
+  background:
+    size: 100%
+    repeat: no-repeat
+
+.term-types-padding
+  article
+    padding: 1.5em 2.5em 2em
+
+.hw
+  background:
+    image: url(/wp-content/themes/ensuremdos/assets/logos/carriers/logo-test.png)
+    position: 0 0%
+
+.aff
+  background:
+    image: url(/wp-content/themes/ensuremdos/assets/logos/carriers/logo-test.png)
+    position: 0 56%
+
+.aff-2
+  background:
+    image: url(/wp-content/themes/ensuremdos/assets/logos/carriers/logo-test.png)
+    position: 0 48%
+
+.t1
+  background:
+    image: radial-gradient(transparentize($gerberco, 0.25),transparentize($gerberco, 0.15)), url(/wp-content/themes/ensuremdos/assets/buy/prod-thumb-1.jpg)
+
+.t2
+  background:
+    image: radial-gradient(transparentize($fidelityco, 0.25),transparentize($fidelityco, 0.15)), url(/wp-content/themes/ensuremdos/assets/buy/prod-thumb-2.jpg)
+
+.t3
+  background:
+    image: radial-gradient(transparentize($mooco, 0.25),transparentize($mooco, 0.15)), url(/wp-content/themes/ensuremdos/assets/buy/prod-thumb-3.jpg)

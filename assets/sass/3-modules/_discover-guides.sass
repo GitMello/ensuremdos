@@ -1,0 +1,307 @@
+.briefing
+  h3
+    font-weight: 400
+  h2, h4
+    margin: 0
+  h4
+    color: $mid-light
+
+.content
+  h2
+    margin-bottom: 0.25em
+    text-transform: capitalize
+  h1
+    text-transform: capitalize
+  h3
+    margin: 0 0 1em
+    font-weight: 400
+    font-style: italic
+    text-transform: capitalize
+  //hr
+    width: 6em
+    margin-bottom: 1.5em
+
+.l-16-9-responsive-text
+  font-size: 120%
+  transition: 300ms
+  h2
+    text-transform: uppercase
+    margin: 0 -25% 0.5em
+    transition: 300ms
+
+  h3
+    text-transform: capitalize
+    font-weight: 200
+    font-style: italic
+    margin: 0 -25% 0.5em
+  h4
+    font-size: 150%
+    margin: 0 -25% 0.5em
+  h6
+    font-weight: 200
+    text-transform: uppercase
+    margin: 0.5em -25% 0
+  hr
+    margin: 0 0 0.5em
+
+.discover-content
+  h1
+    margin: 0.4em auto
+    text-transform: uppercase
+
+  h2
+    font-weight: 400
+    font-style: italic
+    text-transform: capitalize
+
+  h3
+    margin: 0.5em 0 3em
+    font-weight: 400
+    font-style: italic
+    text-transform: capitalize
+
+  h5
+    font-weight: 400
+
+  p
+    margin: 1.5em 0
+    font-weight: 200
+    line-height: 1.5em
+
+  a
+    text-decoration: none
+
+.l-16-9-aspect
+  padding-bottom: 56.25%
+
+.l-display-product-type-list
+  ul
+    padding: 0
+    list-style: none
+    img
+      width: 100%
+    //a
+      font:
+        size: 90%
+  li
+    max-width: 25em
+    //width: 100%
+    display: inline-block
+    vertical-align: top
+    border-radius: 1em
+    margin: 1em
+    //opacity: 0.9
+    transition: 500ms
+    &:hover, &:focus
+      box-shadow: 0 0 2em $mid-light
+      transition: 500ms
+      //opacity: 1
+      header
+        h3
+          transition: 500ms
+          background:
+            color: $accent
+      ul
+        li
+          box-shadow: none
+      article
+        transition: 500ms
+    header
+      border-radius: 0.5em 0.5em 0 0
+      padding: 2em 2em 1em
+      background:
+        color: $transparent
+        //image: url(/wp-content/themes/ensuremdos/assets/heros/green-2.jpg)
+        position: center
+        size: cover
+        repeat: no-repeat
+
+      h2
+        margin: 0
+        font-style: normal
+        text-transform: uppercase
+        font-weight: 600
+      h3
+        transition: 500ms
+        background:
+          color: $primary
+        margin: 0 -1.85em
+        padding: 0.25em 1em
+        box-sizing: border-box
+    article
+      background: $white
+      padding: 0.5em
+      border: solid 0.08em $mid-light
+      border-top: none
+      border-radius: 0 0 0.5em 0.5em
+      p
+        padding: 1em
+        text-align: left
+    hr
+      border: $mid
+    ul
+      //display: none
+      border: none
+      border-top: solid 0.08em $mid-light
+      //width: 100%
+      margin: 1em 0
+      padding: 1em 0
+      li
+        opacity: 1
+        //max-width: 100%
+        background: none
+        display: block
+        border: none
+        margin: 0.75em 0 0
+        text-transform: capitalize
+        font-style: italic
+        font-weight: 600
+        //padding-left: 1.5em
+        //text-indent: -1.5em
+        &:before
+          font-family: FontAwesome
+          content: "\f00c"
+          margin-right: 0.6em
+          color: $primary
+    h3, p
+      margin: 0.25em 0
+    h6
+      margin: 0
+      padding: 0.25em 1.5em
+      //border-radius: 0.5em 0.5em 0 0
+      color: $white
+      //font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.0225em
+
+.product-types
+  header
+    background:
+      color: $transparent
+      position: center
+      size: cover
+      repeat: no-repeat
+
+    h2
+      margin: 0
+      font-style: normal
+      text-transform: uppercase
+      font-weight: 600
+  article
+    padding: 1.5em 1.5em 2em
+    p
+      line-height: 1.5em
+
+    ul
+      border-top: 0.0625em solid $light
+      border-bottom: 0.0625em solid $light
+      padding: 1.5em 0
+      font-style: italic
+      font-weight: 600
+      li
+        margin-bottom: 0.5em
+        padding-left: 1.5em
+        text-indent: -1.5em
+        &:before
+          font-family: FontAwesome
+          content: "\f00c"
+          margin-right: 0.6em
+
+.wax-seal
+  background: $primary
+  margin: -2.5em auto
+  border-radius: 50em
+  width: 5em
+  height: 5em
+  border: solid 0.0625em $white
+  box-sizing: border-box
+  i
+    color: $white
+    margin-top: 0.1em
+  h2
+    font-size: 200%
+  transition: 300ms
+
+.featured-carriers
+  box-shadow: 0 0 3em $mid-dark
+  background: transparentize($white, 0)
+  padding: 1em 0
+  border:
+    top: 0.5em solid
+    bottom: 0.5em solid
+    color: $light
+    radius: 1em
+
+
+.add-list
+  +fa-list-left ("\f00c", $addco, $addco)
+
+.fin-list
+  +fa-list-left ("\f00c", $finco, $finco)
+
+.term-list
+  +fa-list-left ("\f00c", $termco, $termco)
+
+.whole-list
+  +fa-list-left ("\f00c", $wholeco, $wholeco)
+
+.annu-list
+  +fa-list-left ("\f00c", $annuco, $annuco)
+
+.dent-list
+  +fa-list-left ("\f00c", $dentco, $dentco)
+
+.dis-list
+  +fa-list-left ("\f00c", $disco, $disco)
+
+.homesec-list
+  +fa-list-left ("\f00c", $homeseco, $homeseco)
+
+.med-list
+  +fa-list-left ("\f00c", $medco, $medco)
+
+.msup-list
+  +fa-list-left ("\f00c", $msupco, $msupco)
+
+.pet-list
+  +fa-list-left ("\f00c", $petco, $petco)
+
+.save-list
+  +fa-list-left ("\f00c", $saveco, $saveco)
+
+.stm-list
+  +fa-list-left ("\f00c", $stmco, $stmco)
+
+.white-list
+  +fa-list-left ("\f00c", $white, $white)
+
+.mid-light-list
+  +fa-list-left ("\f00c", $mid-light, $mid-light)
+
+.light-list
+  +fa-list-left ("\f00c", $light, $light)
+
+.dark-list
+  +fa-list-left ("\f00c", $dark, $dark)
+
+.black-list
+  +fa-list-left ("\f00c", $black, $black)
+
+.main-cta
+  text-align: center
+  text-transform: uppercase
+  font-weight: 600
+  a
+    text-decoration: none
+    font-size: 1.25em
+    width: 100vw
+    background: transparentize($primary, 0.05)
+    color: $white
+    padding: 1.5em
+    box-sizing: border-box
+    position: fixed
+    z-index: 9998
+    bottom: 0
+    transition: 500ms
+    &:hover
+      background: $accent

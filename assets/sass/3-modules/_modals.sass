@@ -1,0 +1,57 @@
+.modal
+  //margin: -15% 0 0 -32%
+  //left: 50%
+  padding: 3.5em O
+  box-sizing: border-box
+  height: 0
+  opacity: 0
+  position: absolute
+  visibility: hidden
+  width: 100%
+  transition: 0ms
+  top: -3.7em
+  //box-shadow: 0 0 0 0 $transparent
+  //border-radius: 0
+  overflow-y: hidden
+  &:target
+    height: inherit
+    opacity: 0.99
+    top: 3.7em
+    margin-top: -3.7em
+    bottom: 0
+    visibility: visible
+    z-index: 999
+    transition: 500ms
+    //box-shadow: 0 1.5em 1em -1em $dark
+    //border-radius: 0 0 2em 2em
+    transition: 500ms
+    overflow-y: scroll
+    //position: relative
+  img
+    float: left
+    margin: 0 1em 1em 0
+    border: none
+  .close
+    display: none
+    z-index: 1000
+.search-modal
+  //position: absolute
+  z-index: 9999999
+  //top: 0
+  //left: 0
+  //right: 0
+  //bottom: 0
+  height: 100vh
+  width: 100vw
+  background: #fff
+  &:target
+    z-index: 9999999
+  a
+    color: $accent
+    transition: 300ms
+    &:hover
+      color: $altaccent
+
+
+//.modal-content
+  opacity: 1

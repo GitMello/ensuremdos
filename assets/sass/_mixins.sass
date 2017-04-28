@@ -1,0 +1,89 @@
+// GLOBAL MIXINS
+
+=link-button ($co, $bg, $boco, $hoco, $hotext, $size)
+  a
+    text-decoration: none
+    text-transform: capitalize
+    color: $co
+    background:
+      color: $bg
+    white-space: nowrap
+    border: solid 0.08em $boco
+      radius: 50em
+    padding: 0.5em 1em
+    line-height: 3em
+    font:
+      size: $base-size * $size
+      weight: 500
+    display: inline
+    transition: 300ms
+    &:hover
+      color: $hotext
+      border: solid 0.08em $hoco
+      background:
+        color: $hoco
+
+=fa-list-left ($fali, $lico, $bordco)
+  ul
+    h2
+      margin: 0 0 0.5em
+      color: $lico
+    p
+      margin-top: 0
+      
+    border-top: 0.125em solid $bordco
+    border-bottom: 0.125em solid $bordco
+    padding: 2em
+    font-style: italic
+    font-weight: 600
+    border-radius: 1em 0.5em 1em 0.5em
+    h3
+      margin-top: -1em
+    li
+      margin-bottom: 0.5em
+      padding-left: 1.5em
+      text-indent: -1.6em
+      &:before
+        font-family: FontAwesome
+        content: $fali
+        margin-right: 0.6em
+        color: $lico
+      ul
+        border-top: none
+        border-bottom: none
+        font-weight: 400
+        padding: 1em 1em 0
+        font-size: 90%
+        li
+          padding-left: 0em
+          text-indent: -1.4em
+          &:before
+            font-family: FontAwesome
+            content: "\f067"
+            margin-right: 0.6em
+            color: $lico
+
+=slider ($slidenumber, $wrapwidth, $slidewidth, $duration)
+  width: $wrapwidth
+  height: 100%
+  animation-name: $slidenumber
+  animation-duration: $duration
+  animation-iteration-count: infinite
+
+  .slide
+    position: relative
+    width: $slidewidth
+    height: 100%
+    float: left
+    //background: $slidered
+
+=blogco ($color)
+  border:
+    //left: solid 0.25em
+    //top: solid 0.125em
+    color: $color
+    radius: 0 1em 1em 1em
+  height: 100%
+  //padding: 0.5em 0.5em 0 2em
+  box-sizing: border-box
+  box-shadow: -10em 0 0 $color, 20em 0 0 $color, -20em 0 0 $color
