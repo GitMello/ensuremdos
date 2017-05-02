@@ -27,8 +27,14 @@
 
 
     </div>
-    <div class="container no-pad-top butt-link-primary-lg flex just-between">
-      <div><?php previous_posts_link('<i class="fa fa-chevron-left"></i> Previous'); ?></div><div><?php next_posts_link('More <i class="fa fa-chevron-right"></i>'); ?></div>
+    <div class="container no-pad-top flex just-center">
+    <?php  the_posts_pagination( array(
+      'mid_size' => 10,
+      'screen_reader_text' => ' ',
+      'prev_text'          => __( '<i class="fa fa-chevron-left"></i> Previous' ),
+      'next_text'          => __( 'Next <i class="fa fa-chevron-right"></i>' ),
+      ) );
+    ?>
     </div>
   </article>
 

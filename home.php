@@ -36,12 +36,7 @@ get_header(); ?>
 
         </li>
 
-  <?php
-
-  $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1;
-  $args = array('posts_per_page' => 4, 'paged' => $currentPage);
-  query_posts($args);
-  if (have_posts() ):
+  <?php if (have_posts() ):
 
     while(have_posts() ): the_post(); ?>
 
@@ -49,10 +44,7 @@ get_header(); ?>
 
       <?php endwhile;
 
-
-
     endif;
-    wp_reset_query()
 
     ?>
 

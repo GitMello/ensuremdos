@@ -60,11 +60,37 @@ function ensuremdos_remove_version() {
 }
 add_filter('the_generator', 'ensuremdos_remove_version');
 
-// INCLUDE WALKER FILE
-require get_template_directory() . '/inc/walker.php';
+// INCLUDES
+require get_template_directory() . '/inc/walker.php'; //style menu
+require get_template_directory() . '/inc/dupe.php'; //duplicate posts
 
 // ADD EXCERPTS TO PAGES
 add_action( 'init', 'my_add_excerpts_to_pages' );
 function my_add_excerpts_to_pages() {
      add_post_type_support( 'page', 'excerpt' );
 }
+
+// CUSTOM LOGIN LOGO
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/ensurem-logo-w-tagline-dark.svg);
+		height: 4em;
+		width: auto;
+		background-size: contain;
+		background-repeat: no-repeat;
+        	padding-bottom: 0;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Your Site Name and Info';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );

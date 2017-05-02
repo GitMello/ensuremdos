@@ -3,7 +3,13 @@
 <?php if (have_posts() ):
 
   while(have_posts() ): the_post(); ?>
-<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+  <?php
+        if ( has_post_thumbnail() ) {
+        $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+        } else {
+        $url = get_template_directory_uri() . '/assets/discover/discover-bg.jpg';
+        }
+      ?>
 <?php echo '<header class="blog-header text-center flex flex-center just-center text-shade link-no-shad" style="background-image: radial-gradient(rgba(34,34,34,0.5),rgba(34,34,34,0.5)), url('. $url.')">'; ?>
     <div class="l-100-width xl no-pad-sides">
 
@@ -13,7 +19,11 @@
         <div class="butt-next"><?php next_post_link( '%link', '<i class="fa fa-chevron-right"></i>' ); ?></div>
       </div>
 
-      <h2><?php the_excerpt(); ?></h2>
+      <?php
+        $subtitle = get_post_meta($post->ID, 'subtitle', true);
+        if ($subtitle !== '') {
+        	echo '<h2>' . $subtitle . '</h2>';
+      } ?>
 
       <div class="">
         <hr>
