@@ -1,6 +1,6 @@
 <div class="result-container col-md-6 flex flex-start flex-wrap">
     <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-    <?php echo '<div class="col-sm-12 col-md-3 col-pad search-results-img ens-frame" style="background-size: cover; background-image: url('. $url.')">'; ?>
+    <?php echo '<div class="col-sm-12 col-md-3 col-pad blog-results-img ens-frame" style="background-size: cover; background-image: url('. $url.')">'; ?>
       <a href="<?php the_permalink(); ?>"></a>
     </div>
     <div class="col-sm-12 col-md-9 col-pad">

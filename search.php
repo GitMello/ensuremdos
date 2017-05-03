@@ -18,9 +18,13 @@
 
         <?php get_template_part('content', 'search'); ?>
 
-      <?php endwhile;
+      <?php endwhile; ?>
 
-    endif;
+      <?php else: ?>
+
+          <h2 class="text-center">No results.</h2>
+
+    <?php endif;
 
     ?>
 

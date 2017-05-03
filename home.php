@@ -22,7 +22,7 @@ get_header(); ?>
   <article id="awaring" class="l-inline-all-ul blog-ul">
     <div class="container white">
 
-      <ul class="flex flex-stretch flex-wrap blog-intro-primary">
+      <ul class="flex flex-stretch flex-wrap">
         <li class="flex-grow-1 col-md-6 col-lg-6 butt-link hr-primary hr-left col-pad">
           <div class="blog-cat-intro-padding">
             <h1 class="text-primary">Latest from Awaring America<sup>&trade;</sup></h1>
@@ -51,9 +51,11 @@ get_header(); ?>
   </ul>
 
 
-    <div class="butt-link-primary-lg flex just-between">
+    <div class="butt-link flex just-between">
       <div><?php previous_posts_link('<i class="fa fa-chevron-left"></i> Newer Posts'); ?></div><div><?php next_posts_link('Older Posts <i class="fa fa-chevron-right"></i>'); ?></div>
     </div>
+
+
   </div>
 </article>
 

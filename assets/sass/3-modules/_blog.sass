@@ -6,11 +6,16 @@
       box-sizing: border-box
       transition: 500ms
       //border-radius: 0 2em 2em
-      //&:hover, &:focus
-        box-shadow: 0 0 2em $mid-light
-        transition: 500ms
+      &:hover, &:focus
+        article, header
+          box-shadow: 0 -0.5em 1.5em $mid-light
+          transition: 500ms
+        article
+          border: solid 0.125em $mid-light
+          border-top: none
 
       header
+        transition: 500ms
         font-size: 100%
         box-sizing: border-box
         border-radius: 0 1em 0 0
@@ -26,6 +31,7 @@
             style: italic
           text-transform: capitalize
       article
+        transition: 500ms
         color: $mid-dark
         box-sizing: border-box
         border-radius: 0 0 1em 1em
@@ -318,20 +324,20 @@
       style: italic
     text-transform: capitalize
 
-.blog-intro-primary
+//.blog-intro-primary
   +blogco ($primary)
 
-.blog-intro-lifeins
+//.blog-intro-lifeins
   +blogco ($lifeins)
 
-.blog-intro-livingins
+//.blog-intro-livingins
   +blogco ($livingins)
 
-.blog-intro-health
+//.blog-intro-health
   +blogco ($health)
 
-.blog-intro-wealth
+//.blog-intro-wealth
   +blogco ($wealth)
 
-.blog-intro-life
+//.blog-intro-life
   +blogco ($life)
