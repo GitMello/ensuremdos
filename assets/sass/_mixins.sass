@@ -87,3 +87,20 @@
   //padding: 0.5em 0.5em 0 2em
   box-sizing: border-box
   box-shadow: -10em 0 0 $color, 20em 0 0 $color, -20em 0 0 $color
+
+
+=catco ($color)
+  background: $color
+  &:hover
+    background: darken($color, 5)
+  .catco-results
+    a
+      color: $color
+    i
+      color: $color
+    hr
+      border-color: $color
+  .wax-seal
+    background-color: $color
+  header
+    background-color: $color

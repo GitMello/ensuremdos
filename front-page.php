@@ -88,8 +88,8 @@
 
 
     </ul>
-    <div class="butt-link-primary-lg text-right">
-      <a href="/blog">View More</a>
+    <div class="butt-link text-right">
+      <a href="/blog/#awaring">View More</a>
     </div>
   </div>
 </article>

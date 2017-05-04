@@ -31,8 +31,9 @@
         <h5><?php the_time('F j, Y'); ?></h5>
       </div>
 
-      <div class="post-cat-pill flex just-center flex-wrap l-inline-all-ul butt-link-primary">
-        <h5 class="no-marg"><?php the_category(); ?></h5>
+      <div class="post-cat-pill flex just-center flex-wrap l-inline-all-ul">
+        <?php $cat_list = get_my_category_list();?>
+        <h5 class="no-marg"><?php echo $cat_list; ?></h5>
       </div>
 
     </div>
@@ -96,30 +97,36 @@ endif;
     <div class="container featured-posts-container text-white">
       <h2 class="no-marg">You May Enjoy...</h2>
       <ul class="flex flex-stretch flex-wrap">
+  <?php
+    $orig_post = $post;
+    global $post;
+    $tags = wp_get_post_tags($post->ID);
 
-        <?php
-          $args = array(
-            'type' => 'post',
-            'posts_per_page' => 4,
-          );
+    if ($tags) {
+    $tag_ids = array();
+    foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
+    $args=array(
+    'tag__in' => $tag_ids,
+    'post__not_in' => array($post->ID),
+    'posts_per_page'=>4, // Number of related posts to display.
+    'caller_get_posts'=>1
+    );
 
-          $latestBlog = new WP_Query($args);
-          if ($latestBlog->have_posts() ):
+    $my_query = new wp_query( $args );
 
-            while($latestBlog->have_posts() ): $latestBlog->the_post(); ?>
+    while( $my_query->have_posts() ) {
+    $my_query->the_post();
+    ?>
 
-                <?php get_template_part( 'blog-recent-posts') ?>
+  <?php get_template_part( 'blog-recent-posts') ?>
 
-              <?php endwhile;
-
-            endif;
-
-            wp_reset_postdata();
-
-         ?>
-
-      </ul>
-    </div>
+    <? }
+    }
+    $post = $orig_post;
+    wp_reset_query();
+    ?>
+  </ul>
+  </div>
   </article>
 
   <article id="money-save-hero" class="dark text-white text-center">

@@ -23,9 +23,9 @@ get_header(); ?>
     <div class="container white">
 
       <ul class="flex flex-stretch flex-wrap">
-        <li class="flex-grow-1 col-md-6 col-lg-6 butt-link hr-primary hr-left col-pad">
+        <li class="flex-grow-1 col-md-6 col-lg-6 butt-link hr-mid-light hr-left col-pad">
           <div class="blog-cat-intro-padding">
-            <h1 class="text-primary">Latest from Awaring America<sup>&trade;</sup></h1>
+            <h1>Latest from Awaring America<sup>&trade;</sup></h1>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <hr>

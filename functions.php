@@ -63,6 +63,7 @@ add_filter('the_generator', 'ensuremdos_remove_version');
 // INCLUDES
 require get_template_directory() . '/inc/walker.php'; //style menu
 require get_template_directory() . '/inc/dupe.php'; //duplicate posts
+require get_template_directory() . '/inc/cat_colors.php'; //adds class to categories
 
 // ADD EXCERPTS TO PAGES
 add_action( 'init', 'my_add_excerpts_to_pages' );
@@ -94,3 +95,12 @@ function my_login_logo_url_title() {
     return 'Your Site Name and Info';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+// ADDS ANCHORS TO BLOG
+function whatever_next_previous_anchor($url) {
+    $searchpage = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+	if(strpos($searchpage,'blog') !== false) {
+    return $url . '#awaring';
+}}
+
+add_filter('get_pagenum_link', 'whatever_next_previous_anchor');

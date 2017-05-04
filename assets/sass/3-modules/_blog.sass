@@ -75,18 +75,26 @@
         margin: 0 0.25em 0.5em
         //background: $primary
         //width: 100%
-        padding: 0.25em 0.5em
+        padding: 0
         //color: $white
         border-radius: 50em
-        background: $primary
-        &:hover
+        //background: $primary
+        //&:hover
           background: $accent
     a
+      //background: $primary
+      padding: 0.25em 0.75em
+      border-radius: 50em
+      display: inline-block
+      //width: 100%
       text-decoration: none
       color: $white
+      transition: 300ms
+      //&:hover
+        background: $accent
 
 .post-cat-pill
-  h6
+  h5
     margin: 0 0
     ul
       li
@@ -101,8 +109,58 @@
         //&:hover
           background: $accent
       a
+        border-radius: 50em
         text-decoration: none
         color: $white
+        padding: 0.25em 1em
+        display: inline-block
+        transition: 300ms
+        //background: $black
+        margin: 0
+        line-height: 2em
+
+.category-life
+  +catco ($life)
+  header
+    background:
+      image: linear-gradient(transparentize($life, 0.2), transparentize($life, 0.2)), url("../../assets/discover/discover-sprite-1.jpg")
+      position: center
+
+.category-life-insurance
+  +catco ($lifeins)
+  header
+    background:
+      image: linear-gradient(transparentize($lifeins, 0.2), transparentize($lifeins, 0.2)), url("../../assets/discover/discover-sprite-1.jpg")
+      position: left
+
+.category-living-insurance
+  +catco ($livingins)
+  header
+    background:
+      image: linear-gradient(transparentize($livingins, 0.2), transparentize($livingins, 0.2)), url("../../assets/discover/discover-sprite-2.jpg")
+      position: left
+
+.category-health
+  +catco ($health)
+  header
+    background:
+      image: linear-gradient(transparentize($health, 0.2), transparentize($health, 0.2)), url("../../assets/discover/discover-sprite-2.jpg")
+      position: center
+
+.category-wealth
+  +catco ($wealth)
+  header
+    background:
+      image: linear-gradient(transparentize($wealth, 0.2), transparentize($wealth, 0.2)), url("../../assets/discover/discover-sprite-3.jpg")
+      position: left
+
+.category-uncategorized
+  +catco ($mid)
+  header
+    background:
+      image: linear-gradient(transparentize($mid, 0.2), transparentize($mid, 0.2)), url("../../assets/discover/discover-sprite-3.jpg")
+      position: center
+
 
 .l-100-width
   width: 100%
@@ -174,14 +232,17 @@
     //padding: 0 1.5em 3em
   h1
     font-weight: 700
-  h4
+  //h4
     font-style: italic
     font-weight: 400
   hr
     margin-top: 2em
 
 
-
+  ol
+    li
+      margin: 0.75em 0
+      
   ul
     li
       margin: 0.75em 0
@@ -240,7 +301,7 @@
 .img-reveal
   height: 31.5vw
   width: 0%
-  background-image: url(../../assets/blog/test-wide.jpg)
+  //background-image: url(../../assets/blog/test-wide.jpg)
   background-color: $dark
   background-position: center
   background-size: cover
@@ -256,7 +317,7 @@
 .img-reveal-wrap
   height: 31.5vw
   width: 100%
-  background-image: url(../../assets/blog/test-wide.jpg)
+  //background-image: url(../../assets/blog/test-wide.jpg)
   background-position: center
   background-size: cover
   border-radius: 0 2em 2em 2em

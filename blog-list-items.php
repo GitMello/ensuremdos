@@ -18,7 +18,8 @@
     </div>
     <a style="position: absolute;top: 0;right: 0;bottom: 0;left: 0;" href="<?php the_permalink(); ?>"></a>
     <div class="blog-cat-pill flex flex-wrap">
-      <h6 class=""><?php the_category(); ?></h6>
+      <?php $cat_list = get_my_category_list();?>
+      <h6 class=""><?php echo $cat_list; ?></h6>
     </div>
   </header>
   <article class="col-pad">

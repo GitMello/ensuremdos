@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-
-<header id="blog-hero" class="alt">
-    <div class="container no-pad search-header text-shade">
+<style>body {background: white !important}</style>
+<header id="" class="primary">
+    <div class="container no-pad search-header">
       <h1><?php the_archive_title(); ?></h1>
       <h2><?php the_archive_description(); ?></h2>
     </div>
