@@ -161,6 +161,42 @@
       image: linear-gradient(transparentize($mid, 0.2), transparentize($mid, 0.2)), url("../../assets/discover/discover-sprite-3.jpg")
       position: center
 
+.tag
+  +catco ($primary)
+  header
+    background:
+      image: linear-gradient(transparentize($primary, 0.2), transparentize($primary, 0.2)), url("../../assets/discover/discover-sprite-3.jpg")
+      position: center
+
+.butt-link-lifeins-lg
+  +link-button-specific ($white, $transparent, $white, $lifeins, $white, 1.5)
+
+.butt-link-livingins-lg
+  +link-button-specific ($white, $transparent, $white, $livingins, $white, 1.5)
+
+.butt-link-health-lg
+  +link-button-specific ($white, $transparent, $white, $health, $white, 1.5)
+
+.butt-link-life-lg
+  +link-button-specific ($white, $transparent, $white, $life, $white, 1.5)
+
+.butt-link-wealth-lg
+  +link-button-specific ($white, $transparent, $white, $wealth, $white, 1.5)
+
+.butt-link-lifeins
+  +link-button-specific ($white, $transparent, $white, $lifeins, $white, 1)
+
+.butt-link-livingins
+  +link-button-specific ($white, $transparent, $white, $livingins, $white, 1)
+
+.butt-link-health
+  +link-button-specific ($white, $transparent, $white, $health, $white, 1)
+
+.butt-link-life
+  +link-button-specific ($white, $transparent, $white, $life, $white, 1)
+
+.butt-link-wealth
+  +link-button-specific ($white, $transparent, $white, $wealth, $white, 1)
 
 .l-100-width
   width: 100%
@@ -242,7 +278,6 @@
   ol
     li
       margin: 0.75em 0
-      
   ul
     li
       margin: 0.75em 0
@@ -368,12 +403,19 @@
       box-shadow: 0 0 2em $mid
 
 .post-last-p
-
   &:after
-    font-family: FontAwesome
-    content: "\f11e"
-    margin-left: 0.5em
-    color: $accent
+    content: " "
+    display: inline-block
+    overflow: hidden
+    text-indent: -624em
+    white-space: nowrap
+    background:
+      image: url(../../assets/logos/ensurem-logo-mark.svg)
+      size: contain
+      repeat: no-repeat
+    width: 0.75em
+    height: 0.75em
+    margin: 0 0 0 0.25em
 
 .blog-header
   h2

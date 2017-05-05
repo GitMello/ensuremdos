@@ -38,6 +38,15 @@
 
     </div>
   </header>
+<hr class="no-marg">
+  <article id="lora-hero" class="flex flex-center just-start flex-wrap text-shade link-no-shad text-left text-white">
+    <div class="container">
+      <div class="no-pad-sides butt-link-primary-lg">
+        <h1>Need help finding the right products?<br>Take our <strong>Life Optimized&trade; Risk Assessment</strong></h1>
+        <a href="#"><i class="fa fa-chevron-circle-right"></i> | Meet LORA</a>
+      </div>
+    </div>
+  </article>
 
   <!--<article class="text-center content">
      <div class="author-seal"></div>
@@ -82,16 +91,6 @@
 endif;
 
 ?>
-
-  <article id="lora-hero" class="flex flex-center just-start flex-wrap text-shade link-no-shad text-left text-white">
-    <div class="container">
-      <div class="no-pad-sides butt-link-primary-lg">
-        <h1>Need help finding the right products?<br>Take our <strong>Life Optimized&trade; Risk Assessment</strong></h1>
-        <a href="#"><i class="fa fa-chevron-circle-right"></i> | Meet LORA</a>
-      </div>
-    </div>
-  </article>
-
 
   <article id="" class="featured-posts-ul l-inline-all-ul dark">
     <div class="container featured-posts-container text-white">

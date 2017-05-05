@@ -1,5 +1,27 @@
 // GLOBAL MIXINS
 
+=link-button-specific ($co, $bg, $boco, $hoco, $hotext, $size)
+  text-decoration: none
+  text-transform: capitalize
+  color: $co
+  background:
+    color: $bg
+  white-space: nowrap
+  border: solid 0.08em $boco
+    radius: 50em
+  padding: 0.5em 1em
+  line-height: 3em
+  font:
+    size: $base-size * $size
+    weight: 500
+  display: inline
+  transition: 300ms
+  &:hover
+    color: $hotext
+    border: solid 0.08em $hoco
+    background:
+      color: $hoco
+
 =link-button ($co, $bg, $boco, $hoco, $hotext, $size)
   a
     text-decoration: none

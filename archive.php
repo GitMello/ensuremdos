@@ -4,6 +4,11 @@
     <div class="container no-pad search-header">
       <h1><?php the_archive_title(); ?></h1>
       <h2><?php the_archive_description(); ?></h2>
+      <a class="butt-link-lifeins" href="/category/life-insurance">#Life Insurance</a>
+      <a class="butt-link-livingins" href="/category/living-insurance">#Living Insurance</a>
+      <a class="butt-link-health" href="/category/health">#Health</a>
+      <a class="butt-link-wealth" href="/category/wealth">#Wealth</a>
+      <a class="butt-link-life" href="/category/life">#Life</a>
     </div>
   </header>
 
@@ -28,8 +33,17 @@
 
     </div>
 
-    <div class="container no-pad-top butt-link-primary-lg flex just-between">
-      <div><?php previous_posts_link('<i class="fa fa-chevron-left"></i> Newer Posts'); ?></div><div><?php next_posts_link('Older Posts <i class="fa fa-chevron-right"></i>'); ?></div>
+    <div class="container no-pad-top flex just-center">
+      <?php
+  the_posts_pagination( array(
+        'mid_size' => 10,
+        'screen_reader_text' => ' ',
+        'prev_text'          => __( '<i class="fa fa-chevron-left"></i> Previous' ),
+        'next_text'          => __( 'Next <i class="fa fa-chevron-right"></i>' ),
+        'base' => @add_query_arg('paged','%#%'),
+        //'format'             => '/page/%#%',
+        ) );
+     ?>
     </div>
 
   </article>

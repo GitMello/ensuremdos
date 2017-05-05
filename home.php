@@ -6,16 +6,16 @@
 
 get_header(); ?>
 
-  <header id="blog-hero" class="l-fullpage-header flex flex-center just-center text-center flex-wrap text-shade link-no-shad link-hover-dark">
-    <div class="l-fullpage-header-content xl no-pad-sides butt-link-light-lg">
+  <header id="blog-hero" class="l-fullpage-header flex flex-center just-center text-center flex-wrap text-shade link-no-shad">
+    <div class="l-fullpage-header-content xl no-pad-sides">
       <h1><i class="fa fa-newspaper-o"></i> <span class="text-accent">|</span> Awaring America<sup>&trade;</sup></h1>
       <hr>
       <h2>Articles, News &amp; More</h2>
-      <a href="/category/life-insurance">#Life Insurance</a>
-      <a href="/category/living-insurance">#Living Insurance</a>
-      <a href="/category/health">#Health</a>
-      <a href="/category/wealth">#Wealth</a>
-      <a href="/category/life">#Life</a>
+      <a class="butt-link-lifeins-lg" href="/category/life-insurance">#Life Insurance</a>
+      <a class="butt-link-livingins-lg" href="/category/living-insurance">#Living Insurance</a>
+      <a class="butt-link-health-lg" href="/category/health">#Health</a>
+      <a class="butt-link-wealth-lg" href="/category/wealth">#Wealth</a>
+      <a class="butt-link-life-lg" href="/category/life">#Life</a>
     </div>
   </header>
 
