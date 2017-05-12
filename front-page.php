@@ -94,24 +94,10 @@
   </div>
 </article>
 
-<article id="money-save-hero" class="dark text-white text-center">
+<article id="money-save-hero" class="dark text-white butt-link-primary-lg">
   <div class="container">
     <h1 class="no-marg-top">Sign Up For Money <span class="smart-break">Saving Tips</span></h1>
-    <form class="flex flex-wrap just-center">
-      <label class="flex relative">
-        <span>First Name*</span>
-        <input  placeholder="What's your first name?" type="text" tabindex="1" required="required">
-      </label>
-      <label class="flex relative">
-        <span>Last Name*</span>
-        <input placeholder="What's your last name?" type="text" tabindex="2" required="required">
-      </label>
-      <label class="flex relative">
-        <span>Email*</span>
-        <input placeholder="What's your email?" type="email" tabindex="3" required="required">
-      </label>
-      <button name="submit" type="submit" id="newsletter-signup"><i class="fa fa-pencil-square-o"></i> | Sign Up</button>
-    </form>
+    <a href="https://ensurem.typeform.com/to/hBhFF5" target="_blank"><i class="fa fa-pencil-square-o"></i> | Sign Up</a>
   </div>
 </article>
 

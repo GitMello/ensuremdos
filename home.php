@@ -25,9 +25,7 @@ get_header(); ?>
       <ul class="flex flex-stretch flex-wrap">
         <li class="flex-grow-1 col-md-6 col-lg-6 butt-link hr-mid-light hr-left col-pad">
           <div class="blog-cat-intro-padding">
-            <h1>Latest from Awaring America<sup>&trade;</sup></h1>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h1>Awaring America<sup>&trade;</sup> Blog</h1>
             <hr>
             <h3>Other Topics</h3>
             <?php the_tags('',' '); ?>

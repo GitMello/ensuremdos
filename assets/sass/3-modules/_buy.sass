@@ -28,6 +28,8 @@
     //opacity: 0.9
     transition: 500ms
     &:hover, &:focus
+      -webkit-transform: scale(1.01)
+      transform: scale(1.01)
       box-shadow: 0 0 2em $mid-light
       transition: 500ms
       //opacity: 1
@@ -38,6 +40,9 @@
             color: $accent
       ul
         li
+          &:hover, &:focus
+            -webkit-transform: none
+            transform: none
           box-shadow: none
       article
         transition: 500ms
@@ -62,21 +67,43 @@
         box-sizing: border-box
     article
       background: $white
-      padding: 0.5em
+      padding: 1em
       border: solid 0.08em $mid-light
       border-top: none
       border-radius: 0 0 0.5em 0.5em
+      button
+        flex-grow: 0
+        //text-decoration: none
+        text-transform: capitalize
+        color: $white
+        background:
+          color: $primary
+        white-space: nowrap
+        border: solid 0.08em $primary
+          radius: 50em
+        padding: 0.5em 1em
+        //line-height: 3em
+        font:
+          size: $base-size * 1
+          weight: 500
+        //display: inline
+        transition: 300ms
+        &:hover
+          color: $white
+          border: solid 0.08em $accent
+          background:
+            color: $accent
       p
-        padding: 1em
-        text-align: justify
-    hr
-      border: $mid
+        //padding: 1em
+        //text-align: justify
+    //hr
+      border-color: $mid-light
     ul
-      //display: none
+      display: none
       border: none
       border-bottom: solid 0.08em $mid-light
       //width: 100%
-      margin: 1em 0
+      margin: 0 0 1em
       padding: 0 0 1em
       li
         opacity: 1
@@ -103,6 +130,248 @@
       text-transform: uppercase
       letter-spacing: 0.0225em
 
+// LIST FOR DISPLAYING QUOTE RESULTS
+
+.l-display-results-list
+  ul
+    padding: 0
+    list-style: none
+    img
+      width: 100%
+    a
+      font:
+        size: 90%
+
+.l-display-results-item
+  max-width: 19em
+  min-width: 16em
+  //width: 100%
+  display: inline-block
+  vertical-align: top
+  border-radius: 1em
+  margin: 1em
+  //opacity: 0.9
+  transition: 500ms
+  &:hover, &:focus
+    -webkit-transform: scale(1.01)
+    transform: scale(1.01)
+    box-shadow: 0 0 2em $mid-light
+    transition: 500ms
+    //opacity: 1
+    header
+      h3
+        transition: 500ms
+        background:
+          color: $accent
+    ul
+      li
+        &:hover, &:focus
+          -webkit-transform: none
+          transform: none
+        box-shadow: none
+    article
+      transition: 500ms
+  header
+
+    padding: 1.5em 2em
+    background:
+      position: center
+      size: cover
+      repeat: no-repeat
+
+    h2
+      margin: 0
+    h3
+      transition: 500ms
+      background:
+        color: $primary
+      margin: 0 -1.85em
+      padding: 0.25em 1em
+      box-sizing: border-box
+  article
+    background: $white
+    padding: 1em
+    border: solid 0.08em $mid-light
+    border-top: none
+    border-radius: 0 0 0.5em 0.5em
+    button
+      flex-grow: 0
+      //text-decoration: none
+      text-transform: capitalize
+      color: $white
+      background:
+        color: $primary
+      white-space: nowrap
+      border: solid 0.08em $primary
+        radius: 50em
+      padding: 0.5em 1em
+      //line-height: 3em
+      font:
+        size: $base-size * 1
+        weight: 500
+      //display: inline
+      transition: 300ms
+      &:hover
+        color: $white
+        border: solid 0.08em $accent
+        background:
+          color: $accent
+    p
+      //padding: 1em
+      //text-align: justify
+  //hr
+    border-color: $mid-light
+  ul
+    //display: none
+    border: none
+    border-bottom: solid 0.08em $mid-light
+    //width: 100%
+    margin: 0 0 1em
+    padding: 0 0 1em
+    li
+      opacity: 1
+      //max-width: 100%
+      background: none
+      display: block
+      border: none
+      margin: 0.5em 0.5em 0
+      text-transform: capitalize
+      text-indent: -0.4em
+      &:before
+        font-family: FontAwesome
+        content: "\f00c"
+        margin-right: 0.4em
+        color: $primary
+  h3, p
+    margin: 0.25em 0
+  h6
+    margin: 0
+    padding: 0.25em 1.5em
+    border-radius: 0.5em 0.5em 0 0
+    color: $white
+    //font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.0225em
+
+
+
+
+.l-display-results-item-no-carry
+  opacity: 0.5
+  max-width: 19em
+  min-width: 16em
+  //width: 100%
+  display: inline-block
+  vertical-align: top
+  border-radius: 1em
+  margin: 1em
+  //opacity: 0.9
+  transition: 500ms
+  //&:hover, &:focus
+    -webkit-transform: scale(1.01)
+    transform: scale(1.01)
+    box-shadow: 0 0 2em $mid-light
+    transition: 500ms
+    //opacity: 1
+    header
+      h3
+        transition: 500ms
+        background:
+          color: $mid
+    ul
+      li
+        &:hover, &:focus
+          -webkit-transform: none
+          transform: none
+        box-shadow: none
+    article
+      transition: 500ms
+  header
+
+    padding: 1.5em 2em
+    background:
+      position: center
+      size: cover
+      repeat: no-repeat
+
+    h2
+      margin: 0
+    h3
+      transition: 500ms
+      background:
+        color: $mid
+      margin: 0 -1.85em
+      padding: 0.25em 1em
+      box-sizing: border-box
+  article
+    background: $white
+    padding: 1em
+    border: solid 0.08em $mid-light
+    border-top: none
+    border-radius: 0 0 0.5em 0.5em
+    button
+      flex-grow: 0
+      //text-decoration: none
+      text-transform: capitalize
+      color: $white
+      background:
+        color: $primary
+      white-space: nowrap
+      border: solid 0.08em $primary
+        radius: 50em
+      padding: 0.5em 1em
+      //line-height: 3em
+      font:
+        size: $base-size * 1
+        weight: 500
+      //display: inline
+      transition: 300ms
+      &:hover
+        color: $white
+        border: solid 0.08em $accent
+        background:
+          color: $accent
+    p
+      //padding: 1em
+      //text-align: justify
+  //hr
+    border-color: $mid-light
+  ul
+    //display: none
+    border: none
+    border-bottom: solid 0.08em $mid-light
+    //width: 100%
+    margin: 0 0 1em
+    padding: 0 0 1em
+    li
+      opacity: 1
+      //max-width: 100%
+      background: none
+      display: block
+      border: none
+      margin: 0.5em 0.5em 0
+      text-transform: capitalize
+      text-indent: -0.4em
+      &:before
+        font-family: FontAwesome
+        content: "\f00c"
+        margin-right: 0.4em
+        color: $primary
+  h3, p
+    margin: 0.25em 0
+  h6
+    margin: 0
+    padding: 0.25em 1.5em
+    border-radius: 0.5em 0.5em 0 0
+    color: $white
+    //font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.0225em
+
+
+.payment-term
+  font-weight: 400
+  font-size: 50%
 
 .carrier-logo
   overflow: hidden

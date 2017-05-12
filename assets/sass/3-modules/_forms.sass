@@ -15,24 +15,35 @@
   transition: 300ms
   margin: 0.1em
   flex-grow: 1
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  background-color: $white
+  width: 100%
 
 
 #{$all-text-inputs-focus}, select,
 #{$all-text-inputs-hover}
   border: solid 0.0625em $primary
   outline: none
+  -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
 
 #{$all-text-inputs-focus}, select
   border: solid 0.0625em $white
   box-shadow: 0 0 0.125em $alt
   padding: 1.25em 3em 1.25em 1.75em
+  -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
 
 // BUTTON INPUTS
 
 #{$all-buttons}
   background:
     color: $primary
-  text-transform: uppercase
+  text-transform: capitalize
   white-space: nowrap
   font:
     size: $base-size
@@ -83,3 +94,9 @@ label
     z-index: 50
     //background: $primary
     color: $primary
+
+form
+  h4
+    margin: 0
+    font-style: italic
+    font-weight: 400
